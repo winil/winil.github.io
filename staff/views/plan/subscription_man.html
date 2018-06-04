@@ -38,20 +38,20 @@
                     <li>
                         <div>
                             <label>认购人</label>
-                            <input type="text" placeholder="请输入认购人">
+                            <input type="text" placeholder="请输入认购人" disabled value="沈佳銮">
                         </div>
                     </li>
                     <li>
                         <div class="phone">
                             <label>联系电话</label>
-                            <input type="text" placeholder="请输入联系电话" name="mobile" maxlength="11">
-                            <i></i>
+                            <input type="text" placeholder="请输入联系电话" name="mobile" maxlength="11" value="13829797458" disabled>
+                            <i id="phone-edit"></i>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label>预约金额</label>
-                            <input type="text" placeholder="20万起，以5万整数递增">
+                            <input type="text" placeholder="20万起，以5万整数递增" value="20万起，以5万整数递增" disabled>
                         </div>
                     </li>
                 </ul>
@@ -64,7 +64,7 @@
                 <p>1. 选择“我要预约”。</p> 
                 <p>2. 填写完成后，24小时内会有合富金融客户经理与您联系，请注意接听。</p>
             </div>
-            <input type="button" class="footer-fixed uibtn-gray" value="预约完成" id="submit-sure" disabled>
+            <input type="button" class="footer-fixed" value="预约完成" id="submit-sure">
         </div>
 
     </div>
@@ -78,25 +78,9 @@
 		    }
             window.location.href="reservation_cmoplete.html";
         });
-        $('input[type=text]').on('keyup',function(){
-		var _obj = $(this),inputTexts = $('input[type=text]'),flag = false;
-		if (_obj.val()) {
-			for (var i = 0; i < inputTexts.length; i++) {
-				if ($(inputTexts[i]).val().trim()) {
-					flag = true;
-					continue;
-				}else{
-					flag = false;
-					break;
-				}
-			}
-			if (flag) {
-				$('#submit-sure').removeClass("uibtn-gray").addClass('uibtn-pink').removeAttr('disabled');
-			}
-		} else {
-			$('#submit-sure').removeClass("uibtn-pink").addClass('uibtn-gray').attr('disabled',true);
-		}
-	});
+        $("#phone-edit").on("click",function(){
+            $('input[name=mobile]').removeAttr("disabled").focus();
+        });
     </script>
 </body>
 
