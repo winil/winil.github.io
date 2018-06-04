@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script type="text/javascript" src="../../js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <title>预约完成</title>
+    <script type="text/javascript">
+        (function (doc, win) { var docEl = doc.documentElement, resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () { var clientWidth = docEl.clientWidth; if (!clientWidth) return; if (clientWidth >= 750) { docEl.style.fontSize = '50px'; } else { docEl.style.fontSize = 100 * (clientWidth / 750) + 'px'; } }; if (!doc.addEventListener) return; win.addEventListener(resizeEvt, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false); })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="reservation-complete">
+            <header class="ui-header">
+                <div class="dir-left"></div>
+                <h3 class="title">预约完成</h3>
+            </header>
+            <div class="content">
+                <img src="../../images/plan/icon.png" alt="">
+                <p>恭喜你，预约成功！</p>
+                <p>24小时内会有合富金融客户经理与您联系，请注意接听。或有疑问，请咨询4008833733（工作时间内）。</p>
+            </div>
+            <input type="button" class="footer-fixed" value="我知道了" id="input-submit">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
