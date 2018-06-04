@@ -340,7 +340,7 @@
 .plan-process p{color:#333;font-size:.24rem;line-height: .42rem;}
 .plan-process p:last-of-type{line-height: normal;}
 .plan-process i{display:inline-block;margin-right:.04rem;width:.16rem;height:.16rem;background:url(../images/plan/title.png) 0 0 no-repeat;background-size:100%;}
-.plan-detail .footer-fixed,.subscription-man .footer-fixed,.reservation-complete .footer-fixed{display:block;height:.98rem;line-height:.98rem;background-color: #fb2f40;color:#fff;font-size:.32rem;text-align:center;left:0;right:0;margin:0 auto;max-width:500px;}
+.plan-detail .footer-fixed,.subscription-man .footer-fixed,.reservation-complete .footer-fixed{display:block;height:.98rem;line-height:.98rem;background-color: #fb2f40;color:#fff;font-size:.32rem;text-align:center;-webkit-border-radius: 0;-ms-border-radius: 0;-o-border-radius:0;-moz-border-radius: 0; border-radius: 0;left:0;right:0;margin:0 auto;max-width:500px;}
 .plan-detail .uibtn-gray,.subscription-man .uibtn-gray,.reservation-complete .uibtn-gray{background-color:#ccc;}
 /* 首页新增样式 */
 .home-plan{line-height: .95rem;color:#333;font-size:.28rem;margin:-.4rem 0 .22rem 0;}
@@ -356,7 +356,7 @@
 .subscription-man-content .active a{display:inline-block;width:100%;color: #fb2f40;}
 .subscription-man-content .active{border-bottom:.04rem solid #fb2f40;}
 .subscription-input{margin:.6rem .55rem .2rem .55rem;font-size:.3rem;color:#333;line-height:.98rem;padding-bottom:.6rem;}
-.subscription-input div{background:#f5f5f5;height:.98rem;margin-bottom:.38rem;}
+.subscription-input div{background:#f5f5f5;height:.98rem;margin-bottom:.38rem;-webkit-border-radius: 7px;-ms-border-radius: 7px;-o-border-radius: 7px;-moz-border-radius: 7px; border-radius: 7px;}
 .subscription-input li:last-of-type div{margin:0;}
 .subscription-input label{display:inline-block;width:1.7rem;padding-left:.3rem;line-height: normal;border-right:1px solid #999;}
 .subscription-input input{padding-left:.3rem;color:#999;}
